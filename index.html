@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redex - Rent Your Favourite Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+   
+</head>
+<body>
+    <main>
+        <div class="home-section" id="home">
+            <header>
+                <div class="logo">Ridex</div>
+                <nav class="nav-links">
+                    <a href="#home" id="#home">Home</a>
+                    <a href="#explore-cars">Explore Cars</a>
+                    <a href="#home" id="about-us">About Us</a>
+                    <a href="#Blog" class="Blog">Blog</a>
+                </nav>
+                 <div class="header-right">
+    <div class="phone-container">
+      <a href="tel:+88002345678" class="phone-number">8 800 234 56 78</a>
+      <span class="phone-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+    </div>
+    <button class="explore-btn">Explore cars</button>
+    <div class="user-icon">👤</div>
+  </div>
+
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="closeSidebar()">&times;</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="explore-cars">Explore cars</a></li>
+    <li><a href="#home">About us</a></li>
+    <li><a href="#Blog">Blog</a></li>
+  </ul>
+</div>
+
+<div class="hamburger" onclick="openSidebar()">
+  <i class="ri-menu-line"></i>
+</div>
+
+            </header>
+
+            <div class="hero-section">
+                <div class="left">
+                      <h1>The easy way to <br>takeover a lease</h1>
+                      <p>Live in New York, New Jerset and Connecticut!</p>
+                     <div class="search-box">
+  <div class="search-field">
+    <label>Car, model, or brand</label>
+    <input type="text" placeholder="What car are you looking?">
+  </div>
+
+  <div class="search-field">
+    <label>Max. monthly payment</label>
+    <input type="text" placeholder="Add an amount in $">
+  </div>
+
+  <div class="search-field">
+    <label>Make Year</label>
+    <input type="text" placeholder="Add a minimal make year">
+  </div>
+
+  <button class="search-btn">Search</button>
+</div>
+
+                </div>
+                <div class="right">
+                    <img src="BMW.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="featured-section" id="explore-cars">
+            <h1>Featured cars</h1>
+         <div class="cards">
+            <div class="car-card1">
+  <img src="2023-Toyota-RAV4-1024x576.jpg" alt="Toyota RAV4">
+  <h3 class="car-name">Toyota RAV4</h3>
+  <span class="car-year">2021</span>
+
+  <ul class="car-info">
+    <li><i class="ri-user-line"></i> 4 People</li>
+    <li><i class="ri-flashlight-line"></i>Gasoline</li>
+    <li><i class="ri-speed-up-line"></i> 6.1km / 1-litre</li>
+    <li><i class="ri-settings-3-line"></i> Automatic</li>
+  </ul>
+  <hr>
+  <div class="price-booking">
+    <p><strong>$440</strong> /month</p>
+    <div class="actions">
+      <i class="ri-heart-line"></i>
+      <button>Rent now</button>
+    </div>
+  </div>
+</div>
+
+ <div class="car-card1">
+  <img src="2025_BMW_3_Series_LWB_45a88624bd.webp" alt="Toyota RAV4">
+  <h3 class="car-name">BMW 3 Series</h3>
+  <span class="car-year">2019</span>
+
+  <ul class="car-info">
+    <li><i class="ri-user-line"></i> 4 People</li>
+    <li><i class="ri-flashlight-line"></i>Gasoline</li>
+    <li><i class="ri-speed-up-line"></i> 8.2km / 1-litre</li>
+    <li><i class="ri-settings-3-line"></i> Automatic</li>
+  </ul>
+  <hr>
+  <div class="price-booking">
+    <p><strong>$350</strong> /month</p>
+    <div class="actions">
+      <i class="ri-heart-line"></i>
+      <button>Rent now</button>
+    </div>
+  </div>
+</div>
+
+ <div class="car-card1">
+  <img src="20240516121852_2024_Volkswagen_T_Cross_facelift_re_1.avif" alt="Toyota RAV4">
+  <h3 class="car-name">Volkswagen T Cross</h3>
+  <span class="car-year">2020</span>
+
+  <ul class="car-info">
+    <li><i class="ri-user-line"></i> 4 People</li>
+    <li><i class="ri-flashlight-line"></i>Gasoline</li>
+    <li><i class="ri-speed-up-line"></i> 5.3km / 1-litre</li>
+    <li><i class="ri-settings-3-line"></i> Automatic</li>
+  </ul>
+  <hr>
+  <div class="price-booking">
+    <p><strong>$400</strong> /month</p>
+    <div class="actions">
+      <i class="ri-heart-line"></i>
+      <button>Rent now</button>
+    </div>
+  </div>
+</div>
+
+ <div class="car-card1">
+  <img src="images.jpeg" alt="Toyota RAV4">
+  <h3 class="car-name">Cadillac Escalade</h3>
+  <span class="car-year">2020</span>
+
+  <ul class="car-info">
+    <li><i class="ri-user-line"></i> 4 People</li>
+    <li><i class="ri-flashlight-line"></i>Gasoline</li>
+    <li><i class="ri-speed-up-line"></i> 7.7km / 1-litre</li>
+    <li><i class="ri-settings-3-line"></i> Automatic</li>
+  </ul>
+  <hr>
+  <div class="price-booking">
+    <p><strong>$620</strong> /month</p>
+    <div class="actions">
+      <i class="ri-heart-line"></i>
+      <button>Rent now</button>
+    </div>
+  </div>
+</div>
+
+ <div class="car-card1">
+  <img src="images (1).jpeg" alt="Toyota RAV4">
+  <h3 class="car-name">BMW 4 Series GTI</h3>
+  <span class="car-year">2021</span>
+
+  <ul class="car-info">
+    <li><i class="ri-user-line"></i> 4 People</li>
+    <li><i class="ri-flashlight-line"></i>Gasoline</li>
+    <li><i class="ri-speed-up-line"></i> 7.6km / 1-litre</li>
+    <li><i class="ri-settings-3-line"></i> Automatic</li>
+  </ul>
+  <hr>
+  <div class="price-booking">
+    <p><strong>$530</strong> /month</p>
+    <div class="actions">
+      <i class="ri-heart-line"></i>
+      <button>Rent now</button>
+    </div>
+  </div>
+</div>
+
+ <div class="car-card1">
+  <img src="images (2).jpeg" alt="Toyota RAV4">
+  <h3 class="car-name">BMW 4 Series</h3>
+  <span class="car-year">2019</span>
+
+  <ul class="car-info">
+    <li><i class="ri-user-line"></i> 4 People</li>
+    <li><i class="ri-flashlight-line"></i>Gasoline</li>
+    <li><i class="ri-speed-up-line"></i> 7.2km / 1-litre</li>
+    <li><i class="ri-settings-3-line"></i> Automatic</li>
+  </ul>
+  <hr>
+  <div class="price-booking">
+    <p><strong>$490</strong> /month</p>
+    <div class="actions">
+      <i class="ri-heart-line"></i>
+      <button>Rent now</button>
+    </div>
+  </div>
+</div>
+
+         </div>
+        </div>
+
+        <div class="step-section">
+          <h1>Get started with 4 simple steps</h1>
+          <div class="step-cards">
+            <div class="step-card1">
+              <div class="card-icon1"><i class="ri-user-add-fill"></i></div>
+              <div class="card-heading">Create a profile</div>
+               <p>
+    If you are going to use a passage of Lorem Ipsum, you need to be <br>
+  </p>
+             <div class="step-text">
+  <span class="hover-text">Get started</span>
+  <div class="line"></div>
+</div>
+
+            </div>
+
+            <div class="step-card1">
+              <div class="card-icon2"><i class="ri-car-line"></i></div>
+              <div class="card-heading">Tell us what car you want</div>
+              <p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
+            </div>
+
+            <div class="step-card1">
+              <div class="card-icon3"><i class="ri-user-fill"></i></div>
+              <div class="card-heading">Match with seller</div>
+              <p>It to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+            </div>
+
+            <div class="step-card1">
+              <div class="card-icon4"><i class="ri-bank-card-line"></i></div>
+              <div class="card-heading">Make a deal</div>
+              <p>There are many variations of passages of Lorem available, but the majority have suffered alteration</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Blog-section" id="Blog">
+          <h1>Our Blog</h1>
+           <div class="Blog-cards-wrapper">
+            <div class="Blog-cards">
+             <div class="Blog-card1">
+                <div class="blog1">
+                  <img src="Ozone-Layer.webp" alt="" >
+                   <h3>Company</h3>
+                </div>
+                <p class="bgp">Opening of new offices of the company</p>
+                 <div class="dates">
+       <div class="dates-info">
+        <i class="ri-time-line"></i>
+    <p>January 14,2022</p>
+       </div>
+    <div class="message">
+      <i class="ri-chat-3-line"></i>
+      <p>114</p>
+    </div>
+  </div>
+             </div>
+
+              <div class="Blog-card1">
+                <div class="blog2">
+                  <img src="image2.avif" alt="">
+                <h3>Repairs</h3>
+              </div>
+                <p class="bgp">What cars are most vulnerable</p>
+                   <div class="dates">
+       <div class="dates-info">
+        <i class="ri-time-line"></i>
+    <p>January 14,2022</p>
+       </div>
+    <div class="message">
+      <i class="ri-chat-3-line"></i>
+      <p>114</p>
+    </div>
+  </div>
+             </div>
+
+              <div class="Blog-card1">
+                <div class="blog3">
+                  <img src="image3.jpg" alt="">
+                   <h3>Cars</h3>
+                </div>
+                <p class="bgp">Statistics showed which average agey</p>
+               <div class="dates">
+       <div class="dates-info">
+        <i class="ri-time-line"></i>
+    <p>January 14,2022</p>
+       </div>
+    <div class="message">
+      <i class="ri-chat-3-line"></i>
+      <p>114</p>
+    </div>
+  </div>
+             </div>
+
+             <div class="Blog-card1">
+                <div class="blog4">
+                  <img src="image4.jpg" alt="" >
+                   <h3>Cars</h3>
+                </div>
+                <p class="bgp">What´s required when renting a car?</p>
+          <div class="dates">
+       <div class="dates-info">
+        <i class="ri-time-line"></i>
+    <p>January 14,2022</p>
+       </div>
+    <div class="message">
+      <i class="ri-chat-3-line"></i>
+      <p>114</p>
+    </div>
+  </div>
+             </div>
+
+             <div class="Blog-card1">
+                <div class="blog5">
+                  <img src="images5.jpeg" alt="">
+                   <h3>Company</h3>
+                </div>
+                <p class="bgp">New rules for handling our cars</p>
+       <div class="dates">
+       <div class="dates-info">
+        <i class="ri-time-line"></i>
+    <p>January 14,2022</p>
+       </div>
+    <div class="message">
+      <i class="ri-chat-3-line"></i>
+      <p>114</p>
+    </div>
+  </div>
+             </div>
+          </div>
+           </div>
+           <div class="scroll-track">
+  <div class="scroll-thumb"></div>
+</div>
+        </div>
+
+        <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-col about">
+      <h2>Ridex</h2>
+      <p>Search for cheap rental cars in New York.</p>
+      <p>With a diverse fleet of 19,000 vehicles, Waydex offers its consumers an attractive and fun selection.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Pricing plans</a></li>
+        <li><a href="#">Our blog</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">Help center</a></li>
+        <li><a href="#">Ask a question</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms & conditions</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Neighborhoods in New York</h3>
+      <div class="neighborhoods">
+        <ul>
+          <li><a href="#">Manhattan</a></li>
+          <li><a href="#">Central New York City</a></li>
+          <li><a href="#">Upper East Side</a></li>
+          <li><a href="#">Queens</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Theater District</a></li>
+          <li><a href="#">Midtown</a></li>
+          <li><a href="#">SoHo</a></li>
+          <li><a href="#">Chelsea</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Priyanshi Khandelwal. All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="#"><i class="ri-instagram-line"></i></a>
+      <a href="#"><i class="ri-linkedin-box-line"></i></a>
+      <a href="#"><i class="ri-mail-line"></i></a>
+    </div>
+  </div>
+</footer>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
