@@ -270,20 +270,9 @@ gsap.from(".footer-col", {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".footer-bottom", {
-  y: 30,
-  opacity: 0,
-  duration: 0.5,
-  scrollTrigger: {
-    trigger: ".footer-bottom",
-    end: "bottom 90%", // Start when the top of footer-bottom reaches 90% of viewport
-    toggleActions: "play none none none",
 
-  }
-});
 
-var cursor = document.querySelector("#cursor"  
-)
+var cursor = document.querySelector("#cursor")
 
 var main = document.querySelector("main")
 
@@ -294,6 +283,16 @@ main.addEventListener("mousemove",function(dets){
         duration:0.6,
     })
 })
+
+main.addEventListener("touchmove", function (e) {
+  var touch = e.touches[0]; // get first touch point
+  gsap.to(cursor, {
+    x: touch.clientX,
+    y: touch.clientY,
+    duration: 0.4,
+    ease: "power2.out"
+  });
+});
 
 const hoverTargets = document.querySelectorAll("a, button, img, .Blog-card1, hover, .car-card1, .step-card1");
 
