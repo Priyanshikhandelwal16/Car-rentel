@@ -9,12 +9,23 @@ wrapper.addEventListener("scroll", () => {
 });
 
 function openSidebar() {
-  document.getElementById("sidebar").style.right = "0";
+  const sidebar = document.getElementById("sidebar");
+  sidebar.style.right = "0";
+
+  // Animate the sidebar items
+  gsap.from(".sidebar li", {
+    x: -40,
+    opacity: 0,
+    duration: 0.4,
+    stagger: 0.2,
+    ease: "power2.out"
+  });
 }
 
 function closeSidebar() {
   document.getElementById("sidebar").style.right = "-300px";
 }
+
 
 window.addEventListener("load", () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -41,15 +52,16 @@ window.addEventListener("load", () => {
     }
   });
 
-  gsap.from(".hamburger", {
+  gsap.from(".hamburger i", {
     y: -30,
     opacity: 0,
     duration: 0.4,
     scrollTrigger:{
-      trigger: ".hamburger",
+      trigger: ".hamburger i",
       start: "top 90%"
     }
   });
+
   
   gsap.from(".phone-container", {
     y: -30,
@@ -81,18 +93,7 @@ window.addEventListener("load", () => {
     }
   });
 
-  gsap.from(".sidebar li",{
-    x: -40,
-    opacity: 0,
-    duration: 0.4,
-     stagger:1,
-    scrollTrigger:{
-      trigger: ".sidebar",
-      start: "top 90%"
-    }
-  });
-
-  gsap.from(".hero-section .left h1",{
+   gsap.from(".hero-section .left h1",{
     x: -100,
     opacity: 0,
     duration: 1,
