@@ -11,6 +11,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 main {
   min-height: 100vh;
   width: 100%;
@@ -40,6 +44,7 @@ header {
   font-size: 2vw;
   font-weight: 550;
   color: #33334F;
+  position: relative;
 }
 
 .nav-links {
@@ -365,13 +370,15 @@ hr{
   flex-wrap: wrap;
   gap: 30px;
   padding: 40px 0;
-  transition: all 0.3s ease;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .step-card1:hover{
   background-color: #EDF1F7;
-   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+   transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 .step-card1{
